@@ -14,7 +14,7 @@ First, include the `OEXFirebaseAnalytics` library in your project. Open your pro
 module and add the following dependency:
 
 ```gradle
-implementation("org.openedx:firebase-analytics:0.1")
+implementation("org.openedx:firebase-analytics:1.0")
 ```
 
 ### Step 2: Initialize in OpenEdXApp

@@ -40,7 +40,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "org.openedx"
             artifactId = "firebase-analytics"
-            version = "0.1"
+            version = "1.0"
 
             afterEvaluate {
                 from(components["release"])
