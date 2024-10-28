@@ -3,7 +3,6 @@ package org.openedx.firebase
 import android.content.Context
 import android.util.Log
 import com.google.firebase.analytics.FirebaseAnalytics
-import org.openedx.foundation.extension.toBundle
 import org.openedx.foundation.interfaces.Analytics
 
 class OEXFirebaseAnalytics(context: Context) : Analytics {
