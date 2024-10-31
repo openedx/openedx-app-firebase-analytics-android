@@ -10,11 +10,23 @@ To include `OEXFirebaseAnalytics` in your project, follow these steps:
 
 ### Step 1: Add Dependency
 
-First, include the `OEXFirebaseAnalytics` library in your project. Open your project's `build.gradle` file for the app
+Add it to your root build.gradle at the end of repositories:
+
+```groovy
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Include the `OEXFirebaseAnalytics` library in your project. Open your project's `build.gradle` file for the app
 module and add the following dependency:
 
-```gradle
-implementation("org.openedx:firebase-analytics:1.0")
+```groovy
+implementation 'com.github.openedx:openedx-app-firebase-analytics-android:1.0.0'
 ```
 
 ### Step 2: Initialize in OpenEdXApp
