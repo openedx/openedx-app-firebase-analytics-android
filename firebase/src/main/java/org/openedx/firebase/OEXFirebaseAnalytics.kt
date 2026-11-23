@@ -13,12 +13,12 @@ class OEXFirebaseAnalytics(context: Context) : Analytics {
     }
 
     override fun logScreenEvent(screenName: String, params: Map<String, Any?>) {
-        tracker.logEvent(screenName, params.toBundle())
+        tracker.logEvent(formatFirebaseName(screenName), params.toFirebaseParameters().toBundle())
         Log.d(TAG, "Firebase Analytics log Screen Event: $screenName + $params")
     }
 
     override fun logEvent(eventName: String, params: Map<String, Any?>) {
-        tracker.logEvent(eventName, params.toBundle())
+        tracker.logEvent(formatFirebaseName(eventName), params.toFirebaseParameters().toBundle())
         Log.d(TAG, "Firebase Analytics log Event $eventName: $params")
     }
 

@@ -25,3 +25,6 @@ jobs:
 
       - name: assembleRelease
         run: ./gradlew firebase:assembleRelease
+
+      - name: testDebugUnitTest
+        run: ./gradlew firebase:testDebugUnitTest
